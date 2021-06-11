@@ -1,0 +1,12 @@
+Dataset : ,
+Data Quality Parameter,Score
+Provenance,100
+Uniformity,100
+Metadata Coupling,98.24650597283747
+Dataset Characteristics,100
+Categorical Columns wrt all columns,0.09090909090909091
+Percentage of Missing Values,3.978238694321659
+Percentage of duplicate values,1.1560693641618496
+Percentage of Skewness,20.0
+Correlation,36.36363636363637
+Data Quality : ,85.46900365922929
