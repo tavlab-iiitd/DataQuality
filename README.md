@@ -13,3 +13,4 @@ Judging various datasets based on this metric proved that due to the growing tec
 2. These component loadings are used to formulate the Data Quality Label.
 3. The DQ Label is used to test the model on the DHS India datasets to observe trends and quantify the quality of data. 
 4. Elaborate explantion is available in the "DataQualityFramework.ppt". 
+5. The formulated portal is available at the link: https://share.streamlit.io/priyak5/data-quality-platform/main/combine.py 
