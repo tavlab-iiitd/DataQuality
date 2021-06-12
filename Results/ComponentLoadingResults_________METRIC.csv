@@ -1,0 +1,11 @@
+Labels,Principal Component Loadings,Positive Prinicpal Component Loadings,Normalization,Percentage
+Provenance,0.068,1.068,0.097409704,9.740970449
+Uniformity,0.867,1.867,0.170284568,17.02845677
+DatasetCharacterstics,0.871,1.871,0.170649398,17.0649398
+MetadataCoupling,-0.084,0.916,0.083546151,8.354615104
+NonDuplicateRows,-0.202,0.798,0.072783656,7.27836556
+NonMissingRows,0.101,1.101,0.100419555,10.04195549
+Unskewness,0.703,1.703,0.155326523,15.53265232
+CategoricalColumns,-0.082,0.918,0.083728566,8.372856622
+Uncorrelation,-0.278,0.722,0.065851879,6.585187888
+TOTAL,,10.964,,100
