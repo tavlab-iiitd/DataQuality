@@ -9,6 +9,7 @@ Original file is located at
 # import streamlit_theme as stt
 
 # stt.set_theme({'primary': '#000000'})
+import streamlit as st
 
 import numpy as np
 class smith_waterman(object):
@@ -251,8 +252,62 @@ def getSummary(df):
   st.write('Summary:')
   st.write(df_types)
 
+# footer="""
+# <style>
+# .footer {
+# position: fixed;
+# left: 0;
+# bottom: 0;
+# width: 100%;
+# color: black;
+# text-align: center;
+# height: auto;
+# }
+# </style>
+# <div class="footer">
+# <p>Developed by Priya Kaushal, Sezal Chug, Dr. Tavpriesh Sethi and Dr. Ponnurangam Kumaraguru</p>
+# </div>
+# """
+# st.markdown(footer,unsafe_allow_html=True)
+
+
 st.sidebar.title("Data Quality Portal")
-analysis = st.sidebar.selectbox('Select an Option',['Explore Data','Data Quality','About the metric','Data Quality Label'])
+analysis = st.sidebar.selectbox('Select an Option',['Explore Data','Data Quality','About the metric','Data Quality Label', 'Connect with the Team'])
+
+if analysis=='Connect with the Team':
+	st.header('Data Quality Team')
+	st.subheader('Dr. Tavpriesh Sethi')
+	st.image("tav.jpeg", width= 300)
+	st.write("Lab:  [Tav Lab](http://tavlab.iiitd.edu.in/)")
+	st.write("Linkedin:  [Tavpriesh Sethi](https://www.linkedin.com/in/tavpritesh/)")
+	st.write("Twitter: [@Tavpritesh](https://twitter.com/tavpritesh?lang=en)")
+	st.write("Instagram: [@tavpritesh](https://www.instagram.com/tavpritesh/)")
+
+
+
+	st.subheader('Dr. Ponnurangam Kumaraguru')
+	st.image("PK.jpeg", width= 300)
+	st.write("Linkedin  [Ponnurangam Kumaraguru](https://www.linkedin.com/in/ponguru/)")
+	st.write("Twitter [@ponguru](https://twitter.com/ponguru)")
+	st.write("Instagram  [@pk.profgiri](https://www.instagram.com/pk.profgiri/)")
+
+	
+	st.subheader('Priya Kaushal')
+	st.image("Priya.jpeg", width= 300)
+	st.write("Linkedin:  [Priya Kaushal](https://www.linkedin.com/in/priya-kaushal-8718a6151/)")
+	st.write("Instagram:  [@priya556](https://www.instagram.com/priya556/)")
+
+		
+	st.subheader('Sezal Chug')
+	st.image("Sezal.png", width= 300)
+	st.write("Linkedin: [Sezal Chug](https://www.linkedin.com/in/sezal-chug-5678bb151/)")
+	st.write("Instagram: [@sezal98](https://www.instagram.com/sezal98/)")
+
+	
+	
+	
+
+
 
 
 if analysis=='Explore Data':
