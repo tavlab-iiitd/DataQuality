@@ -550,7 +550,7 @@ if analysis=='About the metric':
 	
 	
 
-	menu = ["Provenance","Uniformity","Dataset Characteristics","Metadata Coupling","Statistics","Correlations","Inconsistency"]
+	menu = ["Provenance","Un 13, iformity","Dataset Characteristics","Metadata Coupling","Statistics","Correlations","Inconsistency"]
 	choice = st.selectbox("Select Parameters",menu)
 
 	if choice =="Provenance":
