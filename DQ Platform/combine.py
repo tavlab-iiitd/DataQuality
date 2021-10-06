@@ -580,7 +580,7 @@ if analysis=='Data Quality':
 	    writer = csv.writer(file)
 	    writer.writerow(["Dataset : ", filename])
 	    writer.writerow(["Data Quality Parameter", "Score"])
-	    writer.writerow(["Provenance", "100"])
+# 	    writer.writerow(["Provenance", "100"])
 	    writer.writerow(["Uniformity", "100"])
 	    writer.writerow(["Metadata Coupling",str(check*100) ])
 	    writer.writerow(["Dataset Characteristics", "100"])
