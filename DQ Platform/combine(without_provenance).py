@@ -580,8 +580,7 @@ if analysis=='Data Quality':
 	    writer = csv.writer(file)
 	    writer.writerow(["Dataset : ", filename])
 	    writer.writerow(["Data Quality Parameter", "Score"])
-# 	    writer.writerow(["Provenance", "100"])
-	    writer.writerow(["Uniformity", "100"])
+# 	    writer.writerow(["Uniformity", "100"])
 	    writer.writerow(["Metadata Coupling",str(check*100) ])
 	    writer.writerow(["Dataset Characteristics", "100"])
 	    writer.writerow(["Categorical Columns wrt all columns", CategoricalRatio])
@@ -605,14 +604,11 @@ if analysis=='About the metric':
 	
 	
 
-	menu = ["Provenance","Un 13, iformity","Dataset Characteristics","Metadata Coupling","Statistics","Correlations","Inconsistency"]
+	menu = ["Un 13, iformity","Dataset Characteristics","Metadata Coupling","Statistics","Correlations","Inconsistency"]
 	choice = st.selectbox("Select Parameters",menu)
 
-	if choice =="Provenance":
-		st.subheader("Provenance")
-		st.markdown("Provenance is the chronology of the ownership or location of a particular object. It refers to the personal information related to the dataset which specifies the origin, author, version and date uploaded of that particular dataset. While extracting the dataset, we cross-referenced the information regarding these parameters of the dataset and verified them with the ones retrieved from the metadata. ")
-	
-	elif choice =="Uniformity":
+		
+	if choice =="Uniformity":
 		st.subheader("Uniformity")
 		st.markdown("All columns should have all the data values similar in datatypes.")
 		st.markdown("The values of mean, median, mode, max and min should match the description given in the metadata and the one calculated from the dataset.")	
